@@ -1,8 +1,11 @@
+import models.Persona;
 import structures.trees.IntTree;
+import structures.trees.Tree;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        runIntTree();
+        //runIntTree();
+        runTree();
     }
 
     private static void runIntTree(){
@@ -21,5 +24,39 @@ public class App {
         tree.inOrder();
         System.out.println();
         System.out.println("size: " + tree.size());
+
+        Tree<Persona> tree1 = new Tree<>();
+        tree1.insert(new Persona("Pablo", 21));
+        tree1.insert(new Persona("Maria", 23));
+        tree1.insert(new Persona("Ana", 25));
+        tree1.insert(new Persona("Pedro", 23));
+        tree1.insert(new Persona("Luis", 19));
+
+        System.out.println("PreOrder");
+        tree1.preOrder();
+        
+    }
+
+    private static void runTree(){
+        Tree<Persona> tree = new Tree<>();
+        tree.insert(new Persona("Pablo", 21));
+        tree.insert(new Persona("Maria", 23));
+        tree.insert(new Persona("Ana", 25));
+        tree.insert(new Persona("Pedro", 23));
+        tree.insert(new Persona("Luis", 19));
+
+        System.out.println("PreOrder");
+        tree.preOrder();
+        System.out.println();
+
+        System.out.println("Busqueda de Persona Edad 23");
+
+        Persona findPerson = tree.searchByAge(23);
+        if(findPerson != null){
+            System.out.println(findPerson);
+        }else{
+            System.out.println("No se encontró");
+        }
+        
     }
 }
