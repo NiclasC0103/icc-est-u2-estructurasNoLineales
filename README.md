@@ -9,8 +9,13 @@
 - Práctica: Práctica de Árboles – Implementación Integers
 - Fecha: [2026-01-05]
 
+- Práctica: Práctica de Árboles – Interface Comparable
+- Fecha: [2026-01-06]
+
 ## Descripción
 Se desarrolló la estructura de un Árbol Binario, organizando el proyecto en paquetes para mantener ordenado el código. Se implementó una versión para enteros utilizando lógica recursiva tanto para insertar los datos como para realizar los recorridos PreOrder, InOrder, PostOrder.
+
+Se desarrolló un Árbol Binario genérico implementando la interfaz `Comparable` para permitir el ordenamiento dinámico de objetos complejos (clase `Persona`). Se codificaron algoritmos recursivos para la inserción. Además, se implementaron dos estrategias de búsqueda.
 
 ## Evidencias
 ### Captura 1
