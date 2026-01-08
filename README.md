@@ -12,10 +12,15 @@
 - Práctica: Práctica de Árboles – Interface Comparable
 - Fecha: [2026-01-06]
 
+- Práctica: Práctica de Grafos – Lista de Adyacencia y Vecinos
+- Fecha: [2026-01-08]
+
 ## Descripción
 Se desarrolló la estructura de un Árbol Binario, organizando el proyecto en paquetes para mantener ordenado el código. Se implementó una versión para enteros utilizando lógica recursiva tanto para insertar los datos como para realizar los recorridos PreOrder, InOrder, PostOrder.
 
 Se desarrolló un Árbol Binario genérico implementando la interfaz `Comparable` para permitir el ordenamiento dinámico de objetos complejos (clase `Persona`). Se codificaron algoritmos recursivos para la inserción. Además, se implementaron dos estrategias de búsqueda.
+
+Se implementó la funcionalidad básica de un Grafo utilizando Map. Se codificaron los métodos de visualización `printGraph` y se desarrolló el método `getNeighbors`.
 
 ## Evidencias
 ### Captura 1
@@ -31,4 +36,10 @@ Inserta aquí una segunda captura si aplica.
 
 ### Captura 4
 - Archivo: ![alt text](assets/captura-4.png)
+
+### Captura 5
+- Archivo: ![alt text](assets/captura-5.png)
+
+### Captura 6
+- Archivo: ![alt text](assets/captura-6.png)
 
